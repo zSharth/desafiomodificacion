@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+.container__imagen__body {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+.container__imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__img {
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  object-fit: cover;
+  cursor: pointer;
+  transform: perspective(700px) rotateY(-20deg);
+  margin-top: 40px;
+}
+.title {
+  margin: 70px 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+.container__stickers__body {
+  width: 100%;
+  background: url(../images/fondo.jpg);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stickers__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.stickers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.sticker {
+  width: 280px;
+  height: 350px;
+  border: 3px solid black;
+  padding: 40px 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.514);
+}
+.verificar {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+.btn {
+  display: flex;
+  margin: 50px auto;
+  transform: scale(1.5);
+  background-color: rgb(228, 231, 26);
+  border: none;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+}
+.btn:hover {
+  filter: brightness(105%);
+}
+
+input[type="number"] {
+  font-size: 1.5rem;
+  border-radius: 10px;
+  width: 280px;
+  padding: 0 2px 0 10px;
+}
+.container__password__body {
+  background-image: url(../images/neom-r4ZSR0cKJw8-unsplash.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__password {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  border: 2px solid rgba(0, 0, 0, 0.692);
+  width: max-content;
+  margin: 0 auto;
+  padding: 120px 80px;
+  background-color: rgba(112, 112, 112, 0.473);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px black;
+  color: #eeecec;
+}
+.container__password__title {
+  font-size: 2rem;
+}
+.select {
+  font-size: 2rem;
+  width: 60px;
+  border-radius: 5px;
+}
+.btn__2 {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px 40px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+.boton__desafío {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+.boton__desafío:hover {
+  opacity: 90%;
+}

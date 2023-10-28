@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickers</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <section class="container__stickers__body">
+        <h1 class="title">Puedes llevar hasta 10 stickers en total</h1>
+        <div class="stickers__container">
+            <div class="stickers">
+                <img src="./assets/images/saitama.png" alt="" class="sticker">
+                <input type="number" min="0" id="input-1" class="input" placeholder="Ingresa un número">
+            </div>
+            <div class="stickers">
+                <img src="./assets/images/dva.png" alt="" class="sticker">
+                <input type="number" min="0" id="input-2" class="input" placeholder="Ingresa un número">
+            </div>
+            <div class="stickers">
+                <img src="./assets/images/chi.png" alt="" class="sticker">
+                <input type="number" min="0" id="input-3" class="input" placeholder="Ingresa un número">
+            </div>
+        </div>
+        <h1 class="verificar">Llevas 0 Stickers</h1>
+        <button class="btn" onclick="
+        input_1 =document.querySelector('#input-1').value;
+        input_2 =document.querySelector('#input-2').value;
+        input_3 =document.querySelector('#input-3').value
+        verificar = document.querySelector('.verificar');
+        calculo= Number(input_1) + Number(input_2) + Number(input_3);
+        if (calculo <= 10){
+            verificar.innerHTML='Llevas '+ calculo +' Stickers';
+        }
+        else{
+            verificar.innerHTML='Llevas demasiados Stickers';
+        }
+        ">Verificar</button>
+    </section>
+    <a class="boton__desafío" href="password.html">Pasar al siguiente desafío</a>
+</body>
+
+</html>

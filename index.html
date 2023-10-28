@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágen</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container__imagen__body">
+        <section class="container__imagen">
+            <h1 class="title">Presiona la imágen para añadir bordes</h1>
+            <img onclick="
+        imagen= document.getElementById('img')
+        if(imagen.style.border){
+            imagen.style.border=''
+            title= document.querySelector('.title').innerHTML='Presiona la imágen para añadir bordes'
+        }
+        else{
+            imagen.style.border='1px solid red'
+            title= document.querySelector('.title').innerHTML='Presiona nuevamente para quitar bordes'
+        }
+       " src="./assets/images/Windows_logo_-_2012.png" alt="imagen-paisaje" id="img" class="container__img">
+        </section>
+        <a class="boton__desafío" href="stickers.html">Pasar al siguiente desafío</a>
+    </div>
+</body>
+
+</html>
